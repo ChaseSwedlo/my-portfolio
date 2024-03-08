@@ -143,9 +143,90 @@ aside {
     font-size: 18px;
 }
 
+/*Projects*/
+
+.projects {
+    background-color: rgba(4, 82, 4, 0.068);
+}
+
+/*Contact*/
+
+.contact {
+    padding-top: 77px;
+    padding-bottom: 80px;
+}
+
+.contact h2 {
+    font-size: 26px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0);
+    margin-bottom: 20px
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box-one, .box-two, .box-three {
+    flex: 0 0 calc(33.333333% - 13.33333px);
+    max-width: calc(33.333333% - 13.333333px);
+    height: 180px;
+    color: rgb(7, 6, 26);
+    text-align: center;
+    border: 1px solid #054e1d25;
+    border-radius: 8px;
+    background-color: #31833173;
+    padding-bottom: 12px;
+}
+
+.icon {
+    font-size: 80px;
+    margin-bottom: -30px;
+}
+
+.icon a {
+    color: rgb(7, 34, 14);
+    transition-duration: 0.2s;
+}
+
+.icon a:hover{
+    color: #007200;
+}
+
+.icon a:active {
+    color: #003100;
+}
+
+@media (max-width: 800px) {
+    .box-one, .box-two {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+    .box-three {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .box-one, .box-two, .box-three {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
 /*Footer*/
 
 footer {
     height: 60px;
-    background-color: black;
+    background-color: #002900;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.61);
+    line-height: 60px;
+    text-align: right;
 }
