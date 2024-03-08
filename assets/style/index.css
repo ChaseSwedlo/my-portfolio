@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
 :root {
-    --background-dark: rgb(246, 246, 250);
-    --main-color: rgb(101, 78, 222);
+    --background: rgb(246, 246, 250);
     --font-color: rgb(3, 3, 8);
     --header-height: 48px;
 }
@@ -30,13 +29,12 @@
 }
 
 body {
-    background-color: var(--background-dark);
+    background-color: var(--background);
     font-family: "Inter", Arial, sans-serif;
     color: var(--font-color);
 }
 
 /*HEADER*/
-
 header {
     height: var(--header-height);
     
@@ -52,10 +50,14 @@ ul li a{
     font-size: 18px;
     text-decoration: none;
     color: var(--font-color);
+    transition-duration: 0.2s;
+}
+
+ul li a:hover{
+    color: rgb(25, 105, 22);
 }
 
 /*Main*/
-
 .hero-banner {
     height: calc(100dvh - var(--header-height));
     background-image: url(../media/header.jpg);
@@ -70,7 +72,7 @@ ul li a{
 }
 
 .name {
-    color: #007200;
+    color: rgb(0, 114, 0);
 }
 
 .banner-content p {
@@ -80,7 +82,7 @@ ul li a{
 .button {
     width: 120px;
     height: 50px;
-    background-color: #007200;
+    background-color: rgb(0, 114, 0);
     border-radius: 8px;
     margin: 10px 30px 0 0;
     color: rgb(255, 255, 255);
@@ -90,11 +92,11 @@ ul li a{
 }
 
 .button:hover {
-    background-color: #018f01;
+    background-color: rgb(1, 143, 1);
 }
 
 .button:active {
-    background-color: #006800;
+    background-color: rgb(0, 104, 0);
 }
 
 /*About me*/
@@ -110,6 +112,7 @@ article {
 article h3 {
     font-size: 26px;
 }
+
 article p {
     margin-top: 12px;
     font-size: 18px;
@@ -119,13 +122,13 @@ aside {
     width: 37%;
     background-color: rgba(49, 131, 49, 0.451);
     border-radius: 10px;
-    border: 1px solid #00471811;
-    box-shadow: 6px 6px 12px -11px #0000004b;
+    border: 1px solid rgba(0, 71, 24, 0.067);
+    box-shadow: 6px 6px 12px -11px rgba(0, 0, 0, 0.294);
     margin-bottom: 3px;
 }
 
 .author-pic {
-    height: 280px;
+    height: 270px;
 }
 
 .author-pic img {
@@ -159,7 +162,6 @@ aside {
 }
 
 /*Projects*/
-
 .projects {
     background-color: rgba(49, 131, 49, 0.062);;
     padding-bottom: 80px;
@@ -221,7 +223,7 @@ aside {
     width: 120px;
     height: 30px;
     margin-top: 10px;
-    background-color: #359935;
+    background-color: rgb(53, 153, 53);
     border-radius: 8px;
     color: rgb(255, 255, 255);
     font-size: 16px;
@@ -230,11 +232,11 @@ aside {
 }
 
 .button-two:hover {
-    background-color: #20af20;
+    background-color: rgb(32, 175, 32);
 }
 
 .button-two:active {
-    background-color: #157415;
+    background-color: rgb(21, 116, 21);
 }
 
 .text h4 {
@@ -249,8 +251,20 @@ aside {
     width: 100%;
 }
 
-/*Contact*/
+@media (max-width: 533px) {
+    .project-template {
+        display: inline;
+    }
+    .text, .image, .image-two{
+        width: 100%;
+        height: 450px;
+    }
+    .image-two {
+        margin-top: 40px;
+    }
+}
 
+/*Contact*/
 .contact {
     padding-top: 77px;
     padding-bottom: 80px;
@@ -275,9 +289,9 @@ aside {
     height: 180px;
     color: rgb(7, 6, 26);
     text-align: center;
-    border: 1px solid #054e1d25;
+    border: 1px solid rgba(5, 78, 29, 0.145);
     border-radius: 8px;
-    background-color: #31833173;
+    background-color: rgba(49, 131, 49, 0.451);
     padding-bottom: 12px;
 }
 
@@ -292,11 +306,11 @@ aside {
 }
 
 .icon a:hover{
-    color: #007200;
+    color: rgb(0, 114, 0);
 }
 
 .icon a:active {
-    color: #003100;
+    color: rgb(0, 49, 0);
 }
 
 @media (max-width: 800px) {
@@ -317,12 +331,10 @@ aside {
     }
 }
 
-
 /*Footer*/
-
 footer {
     height: 60px;
-    background-color: #002900;
+    background-color: rgb(0, 41, 0);
 }
 
 footer p {
