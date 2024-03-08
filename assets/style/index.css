@@ -89,11 +89,11 @@ ul li a{
     transition-duration: 0.2s;
 }
 
-.banner-content input[type=button]:hover {
+.button:hover {
     background-color: #018f01;
 }
 
-.banner-content input[type=button]:active {
+.button:active {
     background-color: #006800;
 }
 
@@ -117,7 +117,7 @@ article p {
 
 aside {
     width: 37%;
-    background-color: #31833173;
+    background-color: rgba(49, 131, 49, 0.451);
     border-radius: 10px;
     border: 1px solid #00471811;
     box-shadow: 6px 6px 12px -11px #0000004b;
@@ -161,7 +161,92 @@ aside {
 /*Projects*/
 
 .projects {
-    background-color: rgba(4, 82, 4, 0.068);
+    background-color: rgba(49, 131, 49, 0.062);;
+    padding-bottom: 80px;
+}
+
+.projects h2 {
+    font-size: 26px;
+    padding-top: 77px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.project-template {
+    height: 450px;
+}
+
+.project-template + .project-template {
+    padding-top: 80px;
+}
+
+.text {
+    width: 50%;
+    background-color: rgba(49, 131, 49, 0.451);
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.image {
+    width: 50%;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(49, 131, 49, 0.451) transparent;
+}
+
+.image::-webkit-scrollbar-thumb {
+    background-color: rgba(49, 131, 49, 0.451); /*For Safari*/
+}
+
+.image::-webkit-scrollbar {
+    width: 8px; /* For safari */
+}
+
+.text, .text-two{
+    width: 50%;
+    background-color: rgba(49, 131, 49, 0.096);
+    border: 1px solid rgba(21, 92, 36, 0.096);
+}
+
+.image-two {
+    width: 50%;
+    background-image: url(../media/config.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.button-two {
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #359935;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    transition-duration: 0.2s;
+}
+
+.button-two:hover {
+    background-color: #20af20;
+}
+
+.button-two:active {
+    background-color: #157415;
+}
+
+.text h4 {
+    font-size: 18px;
+}
+
+.text p {
+    font-size: 16px;
+}
+
+.p-one .image figure img {
+    width: 100%;
 }
 
 /*Contact*/
