@@ -123,7 +123,7 @@ ul li a:hover{
     transition: all 0.3s ease-in-out;
 }
   
-.read-more:hover span {
+.read-more:active span {
     animation: scaleUp 0.3s ease-in-out;
 }
   
@@ -132,10 +132,51 @@ ul li a:hover{
         transform: scale(1);
     }
     50% {
-        transform: scale(0.978);
+        transform: scale(0.93);
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@media (max-width: 740px) {
+    .banner-content h1 {
+        font-size: 52px;
+    }
+    .banner-content p {
+        font-size: 28px;
+    }
+    .read-more {
+        width: 114px;
+        height: 47px;
+    }
+}
+
+@media (max-width: 620px) {
+    .banner-content h1 {
+        font-size: 38px;
+    }
+    .name{
+        font-size: 46px;
+    }
+    .banner-content p {
+        font-size: 22px;
+    }
+    .banner-content {
+        margin-top: -15px;
+    }
+    .read-more {
+        width: 111px;
+        height: 46px;
+    }
+}
+
+@media (max-width: 526px) {
+    .banner-content {
+        margin-top: -15px;
+    }
+    .banner-content {
+        margin-top: -30px;
     }
 }
 
